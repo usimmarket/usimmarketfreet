@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>freeT 가입신청서 (판매점전용)</title>
+<style>
+:root{--bg:#0c1522;--card:#fff;--ink:#0f172a;--muted:#6b7280;--accent:#06b6d4;--danger:#ef4444;--line:#e5e7eb;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans KR",Arial,sans-serif}
+header{position:sticky;top:0;z-index:5;background:rgba(12,21,34,.92);backdrop-filter:blur(6px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.wrap{max-width:1100px;margin:0 auto;padding:12px 16px}
+.top{display:grid;grid-template-columns:240px 1fr 260px;gap:10px;align-items:center}
+.brand-left img{height:42px;display:block;max-width:180px;object-fit:contain}
+.um-left img{height:44px;display:block;max-width:220px;object-fit:contain}
+.brand-center{display:flex;align-items:center;justify-content:center;gap:14px;min-height:44px}
+.carrier-logo{height:44px;max-width:220px;object-fit:contain;display:block}
+.brand-text{display:flex;align-items:center;gap:12px}
+.title{font-weight:800;font-size:18px;letter-spacing:.2px;text-align:left}
+.badge{padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.08);font-size:12px;font-weight:800;white-space:nowrap}
+.langs{display:flex;justify-content:flex-end;gap:10px;flex-wrap:wrap}
+.chip{
+  width:34px;height:34px;
+  display:flex;align-items:center;justify-content:center;
+  padding:0;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.26);
+  background:transparent;
+  color:rgba(255,255,255,.88);
+  font-size:12px;font-weight:900;
+  cursor:pointer;user-select:none;
+}
+.chip:hover{border-color:rgba(255,255,255,.42)}
+.chip.active{background:rgba(6,182,212,.14);border-color:rgba(6,182,212,.95);color:#06b6d4}
+main{padding:18px 0 88px}
+.card{background:var(--card);border-radius:16px;padding:16px 16px 18px;margin:0 0 14px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+h3{margin:0 0 10px;font-size:15px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px 14px}
+label{display:block;font-weight:800;margin:6px 0 6px}
+.req:after{content:" *";color:var(--danger)}
+input,select,textarea{width:100%;padding:12px 12px;border:1px solid var(--line);border-radius:12px;font:inherit}
+/* 강조: 월 납부요금(요청 반영) */
+#final_monthly_fee{font-weight:900;font-size:18px;color:var(--danger);}
+input[readonly]{background:#f8fafc}
+.seg{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+input[type="radio"],input[type="checkbox"]{width:16px;height:16px;margin:0;accent-color:var(--accent)}
+label.radio{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border:1px solid var(--line);background:#f8fafc;border-radius:999px;cursor:pointer}
+label.radio:hover{border-color:#cbd5e1}
+label.radio:has(input:checked){border-color:rgba(6,182,212,.55);background:rgba(6,182,212,.10)}
+.note-red{color:var(--danger);font-weight:800;font-size:13px;margin-top:8px}
+.muted{color:var(--muted);font-size:12px;margin-top:6px}
+.fixbar{position:fixed;left:0;right:0;bottom:0;background:rgba(12,21,34,.95);border-top:1px solid rgba(255,255,255,.08)}
+.fixbar .wrap{display:flex;gap:10px;justify-content:flex-end}
+.btn{border:0;border-radius:12px;padding:12px 14px;font-weight:900;cursor:pointer}
+.btn.primary{background:var(--accent);color:#05202a}
+.btn.outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.24)}
+@media (max-width:820px){
+  .top{display:grid;grid-template-columns:240px 1fr 260px;gap:10px;align-items:center}
+  .langs{justify-content:flex-start}
+}
+@media (max-width:720px){
+  .row{grid-template-columns:1fr}
+}
+@media (max-width:860px){.top{grid-template-columns:160px 1fr 190px}.um-left img{height:36px}.carrier-logo{height:36px}.title{font-size:16px}.badge{padding:5px 10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div class="um-left"><img id="usimMarketLogo" src="usimmarket.png" alt="usim market"/>
+<script>
+(function () {
+  const img = document.getElementById('usimMarketLogo');
+  const candidates = ['usimmarket.png','/usimmarket.png','USIMMARKET.png','/USIMMARKET.png'];
+  let idx = 0;
+  img.addEventListener('error', () => {
+    idx += 1;
+    if (idx < candidates.length) img.src = candidates[idx];
+  });
+})();
+</script></div>
+
+      <div class="brand-center">
+        <img class="carrier-logo" src="freet_logo_kr.png" alt="freeT"/>
+        <div class="brand-text">
+          <div class="title" data-i18n="title">가입신청서</div>
+          <div class="badge" data-i18n="dealer_only">판매점 전용</div>
+        </div>
+      </div>
+
+      <div class="langs" id="langBar">
+        <div class="chip active" data-lang="ko">KO</div>
+        <div class="chip" data-lang="en">EN</div>
+        <div class="chip" data-lang="vi">VI</div>
+        <div class="chip" data-lang="th">TH</div>
+        <div class="chip" data-lang="kh">KH</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+<form id="f">
+  <section class="card" id="plan-card">
+    <h3 data-i18n="sec_plan">요금제 / 가입유형</h3>
+    <div class="row">
+      <div>
+        <label class="req" data-i18n="plan_group">요금제 그룹</label>
+        <div class="seg">
+          <label class="radio"><input type="radio" name="freet_group" value="sk" checked><span data-i18n="freet_sk">프리티SK요금제</span></label>
+          <label class="radio"><input type="radio" name="freet_group" value="kt"><span data-i18n="freet_kt">프리티KT요금제</span></label>
+        </div>
+      </div>
+      <div>
+        <label class="req" data-i18n="join_type">가입유형</label>
+        <div class="seg">
+          <label class="radio"><input type="radio" name="join_type" value="new" checked><span data-i18n="new">신규</span></label>
+          <label class="radio"><input type="radio" name="join_type" value="port"><span data-i18n="port">번호이동</span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:8px">
+      <div style="grid-column:1 / -1">
+        <label class="req" data-i18n="plan_select">상세 요금제 선택</label>
+        <select id="plan_select"></select>
+
+        <!-- 출력/매핑용 -->
+        <input type="hidden" id="plan_code" name="plan_code" value="">
+        <input type="hidden" id="plan_name" name="plan_name" value="">
+        <input type="hidden" id="carrier" name="carrier" value="SKT">
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:8px">
+      <div>
+        <label class="req" data-i18n="base_fee">월 정액요금</label>
+        <input id="base_monthly_fee" name="base_monthly_fee" type="text" readonly>
+      </div>
+      <div>
+        <label class="req" data-i18n="disc_fee">월 요금할인</label>
+        <input id="plan_disc" name="plan_disc" type="text" readonly>
+      </div>
+      <div>
+        <label class="req" data-i18n="final_fee">월 납부요금</label>
+        <input id="final_monthly_fee" name="final_monthly_fee" type="text" readonly>
+      </div>
+    </div>
+
+    <!-- 2페이지 항목: 휴대폰 월 할부금(A) = 빈칸 고정 -->
+    <input type="hidden" id="installment_a" name="installment_a" value="">
+    <input type="hidden" id="total_monthly_fee" name="total_monthly_fee" value="">
+  </section>
+
+  <section class="card">
+    <h3 data-i18n="sec_customer">고객 정보(가입자)</h3>
+    <div class="row">
+      <div>
+        <label class="req" data-i18n="name">가입자명</label>
+        <input id="subscriber_name" name="subscriber_name" type="text" placeholder="※대문자로작성/띄워쓰기 확인/오타 유의 해주시길바랍니다.">
+      </div>
+      <div>
+        <label class="req" data-i18n="birth">생년월일</label>
+        <input id="birth" name="birth" type="text" maxlength="8" placeholder="YYYYMMDD 또는 YYMMDD">
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <label class="req" data-i18n="customer_type">고객구분</label>
+        <div class="seg">
+          <label class="radio"><input type="radio" name="customer_type" value="native" checked><span data-i18n="native">내국인</span></label>
+          <label class="radio"><input type="radio" name="customer_type" value="foreigner"><span data-i18n="foreigner">외국인</span></label>
+        </div>
+      </div>
+      <div>
+        <label class="req" data-i18n="addr">주소(국내)</label>
+        <input id="addr" name="addr" type="text" placeholder="예: 서울시 ...">
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3 data-i18n="sec_line">가입 유형/회선 정보</h3>
+
+    <div class="row">
+      <div id="wish_row" style="grid-column:1 / -1">
+        <label data-i18n="wish4">희망번호(신규 선택시)</label>
+        <input id="wish4" name="wish4" type="text" maxlength="4" placeholder="예: 1234">
+      </div>
+    </div>
+
+    <!-- 출력일자는 화면에 표시하지 않음 (매핑/출력용 hidden) -->
+    <input type="hidden" id="apply_date" name="apply_date" value="">
+<div class="row" id="port_row" style="display:none;margin-top:8px">
+      <div>
+        <label class="req" data-i18n="portnum">번호이동할 번호</label>
+        <div class="seg" style="margin-top:6px">
+          <label class="radio"><input type="radio" name="mnp_pay_type" value="postpaid" checked><span data-i18n="postpaid">후불</span></label>
+          <label class="radio"><input type="radio" name="mnp_pay_type" value="prepaid"><span data-i18n="prepaid">선불</span></label>
+        </div>
+        <input id="port_number" name="port_number" type="text" placeholder="01012345678 (숫자만)">
+      </div>
+      <div>
+        <label class="req" data-i18n="prevcarrier">변경전 통신사</label>
+        <select id="prev_carrier" name="prev_carrier">
+          <option value="skt">SKT</option>
+          <option value="kt">KT</option>
+          <option value="lgu">LGU+</option>
+          <option value="mvno">알뜰폰</option>
+        </select>
+        <div id="mvno_box" style="display:none;margin-top:10px">
+          <label class="req" data-i18n="mvnoname">알뜰폰 업체명</label>
+          <input id="mvno_name" name="mvno_name" type="text">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3 data-i18n="sec_sim">USIM / eSIM</h3>
+    <div class="row">
+      <div>
+        <label class="req" data-i18n="sim_type">유심 타입</label>
+        <div class="seg">
+          <label class="radio"><input type="radio" name="sim_type" value="usim" checked><span data-i18n="usim">USIM</span></label>
+          <label class="radio"><input type="radio" name="sim_type" value="esim"><span data-i18n="esim">eSIM</span></label>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row" id="usim_fields" style="margin-top:8px">
+      <div>
+        <label class="req" data-i18n="sim_serial">USIM 일련번호</label>
+        <input id="sim_serial" name="sim_serial" type="text" placeholder="예: 8982...">
+      </div>
+      <div></div>
+    </div>
+
+    <div id="esim_fields" style="display:none;margin-top:8px">
+      <div class="row">
+        <div>
+          <label class="req">IMEI</label>
+          <input id="imei1" name="imei1" type="text" placeholder="15자리 숫자">
+        </div>
+        <div>
+          <label>IMEI2</label>
+          <input id="imei2" name="imei2" type="text" placeholder="15자리 숫자">
+        </div>
+      </div>
+      <div class="row" style="margin-top:8px">
+        <div>
+          <label class="req">EID</label>
+          <input id="eid" name="eid" type="text" placeholder="32자리">
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3 data-i18n="sec_pay">자동이체/결제</h3>
+    <div class="row">
+      <div>
+        <label class="req" data-i18n="pay_method">자동이체 방식</label>
+        <div class="seg">
+          <label class="radio"><input type="radio" name="autopay_method" value="bank" checked><span data-i18n="bank">계좌이체</span></label>
+          <label class="radio"><input type="radio" name="autopay_method" value="card"><span data-i18n="card">신용카드</span></label>
+        </div>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="row" style="margin-top:8px">
+      <div>
+        <label class="req" data-i18n="holder">예금주(카드주)</label>
+        <input id="autopay_holder" name="autopay_holder" type="text" placeholder="※대문자로작성/띄워쓰기 확인/오타 유의 해주시길바랍니다.">
+        <div class="note-red" data-i18n="sign_note">※외국인 가입자는 본인명의 계좌만 등록이 가능합니다.</div>
+      </div>
+      <div>
+        <label class="req" data-i18n="pay_birth">생년월일</label>
+        <input id="autopay_birth" name="autopay_birth" type="text" maxlength="8" placeholder="YYYYMMDD 또는 YYMMDD">
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:8px">
+      <div>
+        <label class="req" data-i18n="autopay_org">은행명(카드사명)</label>
+        <input id="autopay_org" name="autopay_org" type="text">
+      </div>
+      <div>
+        <label class="req" data-i18n="autopay_number">계좌번호(카드번호)</label>
+        <input id="autopay_number" name="autopay_number" type="text">
+        <div id="card_fields" style="display:none;margin-top:10px">
+          <label class="req" data-i18n="exp_ym">유효기간(년/월)</label>
+          <div class="row" style="grid-template-columns:1fr 1fr;gap:8px">
+            <input id="card_exp_year" name="card_exp_year" type="text" maxlength="2" placeholder="YY">
+            <input id="card_exp_month" name="card_exp_month" type="text" maxlength="2" placeholder="MM">
+          </div>
+        </div>
+        <input type="hidden" id="autopay_exp" name="autopay_exp" value="">
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h3 data-i18n="sec_addon">부가서비스</h3>
+    <div class="seg">
+      <label class="radio"><input type="checkbox" checked disabled><span data-i18n="addon_fixed">데이터 로밍 차단 / 국제전화 발신 차단</span></label>
+    </div>
+
+    <div style="margin-top:14px">
+      <label class="req" data-i18n="seller">판매직원(상담사) 성명</label>
+      <input id="seller_name" name="seller_name" type="text" placeholder="예: ROBERT 또는 로버트">
+    </div>
+  </section>
+
+  <section class="card">
+    <h3>내부용 필드</h3>
+    <div class="muted">※ 매핑/인쇄 단계에서 사용되는 필드가 포함되어 있습니다.</div>
+  </section>
+</form>
+</main>
+
+<div class="fixbar">
+  <div class="wrap">
+    <button class="btn outline" id="resetBtn" type="button" data-i18n="reset">초기화</button>
+    <button class="btn primary" id="saveBtn" type="button" data-i18n="save_pdf">PDF 저장(준비중)</button>
+    <button class="btn primary" id="printBtn" type="button" data-i18n="print">인쇄(준비중)</button>
+  </div>
+</div>
+
+<script>
+const I18N = {"ko": {"title": "가입신청서", "sec_plan": "요금제 / 가입유형", "plan_group": "요금제 그룹", "freet_sk": "프리티SK요금제", "freet_kt": "프리티KT요금제", "join_type": "가입유형", "new": "신규", "port": "번호이동", "plan_select": "상세 요금제 선택", "base_fee": "월 정액요금", "disc_fee": "월 요금할인", "final_fee": "월 납부요금", "sec_customer": "고객 정보(가입자)", "name": "가입자명", "birth": "생년월일", "customer_type": "고객구분", "native": "내국인", "foreigner": "외국인", "addr": "주소(국내)", "sec_line": "가입 유형/회선 정보", "wish4": "희망번호(신규 선택시)", "portnum": "번호이동할 번호", "postpaid": "후불", "prepaid": "선불", "prevcarrier": "변경전 통신사", "mvnoname": "알뜰폰 업체명", "sec_sim": "USIM / eSIM", "sim_type": "유심 타입", "usim": "USIM", "esim": "eSIM", "sim_serial": "USIM 일련번호", "sec_pay": "자동이체/결제", "pay_method": "자동이체 방식", "bank": "계좌이체", "card": "신용카드", "holder": "예금주(카드주)", "pay_birth": "생년월일", "autopay_org": "은행명(카드사명)", "autopay_number": "계좌번호(카드번호)", "exp_ym": "유효기간(년/월)", "sec_addon": "부가서비스", "addon_fixed": "데이터 로밍 차단 / 국제전화 발신 차단", "seller": "판매직원(상담사) 성명", "sign_note": "※외국인 가입자는 본인명의 계좌만 등록이 가능합니다.", "reset": "초기화", "save_pdf": "PDF 저장(준비중)", "print": "인쇄(준비중)", "apply_date": "출력일자", "dealer_only": "판매점 전용"}, "en": {"title": "Application Form", "sec_plan": "Plan / Subscription Type", "plan_group": "Plan group", "freet_sk": "PRETTY SK plans", "freet_kt": "PRETTY KT plans", "join_type": "Subscription type", "new": "New", "port": "Port-in", "plan_select": "Select plan", "base_fee": "Base monthly fee", "disc_fee": "Monthly discount", "final_fee": "Monthly payment", "sec_customer": "Customer info", "name": "Name", "birth": "Date of birth", "customer_type": "Customer type", "native": "Korean", "foreigner": "Foreigner", "addr": "Address (KR)", "sec_line": "Line info", "wish4": "Desired last 4 digits (new)", "portnum": "Port-in number", "postpaid": "Postpaid", "prepaid": "Prepaid", "prevcarrier": "Previous carrier", "mvnoname": "MVNO name", "sec_sim": "USIM / eSIM", "sim_type": "SIM type", "usim": "USIM", "esim": "eSIM", "sim_serial": "USIM serial", "sec_pay": "Auto-pay", "pay_method": "Auto-pay method", "bank": "Bank transfer", "card": "Credit card", "holder": "Account/Card holder", "pay_birth": "DOB", "autopay_org": "Bank/Card issuer", "autopay_number": "Account/Card number", "exp_ym": "Expiry (YY/MM)", "sec_addon": "Add-on", "addon_fixed": "Block roaming data / international calls", "seller": "Sales staff name", "sign_note": "Signature must be handwritten by the applicant.", "reset": "Reset", "save_pdf": "Save PDF (coming soon)", "print": "Print (coming soon)", "apply_date": "Print date", "dealer_only": "Dealer Only"}, "vi": {"title": "Đơn đăng ký", "dealer_only": "Chỉ đại lý"}, "th": {"title": "แบบฟอร์มสมัคร", "dealer_only": "สำหรับตัวแทนเท่านั้น"}, "kh": {"title": "ពាក្យស្នើសុំ", "dealer_only": "សម្រាប់ភ្នាក់ងារតែប៉ុណ្ណោះ"}};
+let currentLang = "ko";
+function t(key){
+  const ko = I18N.ko || {};
+  const langPack = I18N[currentLang] || {};
+  return langPack[key] || ko[key] || key;
+}
+function applyLang(){
+  document.documentElement.lang = currentLang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{ el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll("#langBar .chip").forEach(c=>c.classList.toggle("active", c.dataset.lang===currentLang));
+}
+document.getElementById("langBar").addEventListener("click", (e)=>{
+  const chip = e.target.closest(".chip"); if(!chip) return;
+  currentLang = chip.dataset.lang;
+  applyLang();
+});
+
+const PLANS = {
+  sk: [{"code": "SK01", "name": "freeT음성기본7G+1M / 26,400원", "base": 29700, "disc": 3300, "pay": 26400}, {"code": "SK02", "name": "freeT데이터안심10G+1M / 29,700원", "base": 38500, "disc": 8800, "pay": 29700}, {"code": "SK03", "name": "freeT데이터안심100분15G+ / 29,700원", "base": 41800, "disc": 12100, "pay": 29700}, {"code": "SK04", "name": "freeT데이터안심300분15G+ / 39,600원", "base": 46200, "disc": 6600, "pay": 39600}, {"code": "SK05", "name": "freeT데이터중심11G+ / 43,890원", "base": 49390, "disc": 5500, "pay": 43890}, {"code": "SK06", "name": "freeT데이터팡팡100G+ / 47,500원", "base": 53000, "disc": 5500, "pay": 47500}, {"code": "SK07", "name": "5G더빠른200G / 59,000원", "base": 70000, "disc": 11000, "pay": 59000}, {"code": "SK08", "name": "음성기본7G+1M / 19,800원", "base": 29700, "disc": 9900, "pay": 19800}, {"code": "SK09", "name": "데이터안심10G+1M / 24,200원", "base": 38500, "disc": 14300, "pay": 24200}, {"code": "SK10", "name": "데이터안심300분15G+ / 31,900원", "base": 46200, "disc": 14300, "pay": 31900}, {"code": "SK11", "name": "USIM데이터중심11G / 37,290원", "base": 49390, "disc": 12100, "pay": 37290}, {"code": "SK12", "name": "프리티데이터팡팡 / 45,300원", "base": 53000, "disc": 7700, "pay": 45300}],
+  kt: [{"code": "KT01", "name": "데이터안심7G+ / 19,800원", "base": 29700, "disc": 9900, "pay": 19800}, {"code": "KT02", "name": "음성기본7G(밀리의서재)+1M / 26,400원", "base": 35750, "disc": 9350, "pay": 26400}, {"code": "KT03", "name": "데이터안심10G(CU멤버십)+1M / 31,350원", "base": 37950, "disc": 6600, "pay": 31350}, {"code": "KT04", "name": "데이터안심15G(CU멤버십)+1M / 34,100원", "base": 40700, "disc": 6600, "pay": 34100}, {"code": "KT05", "name": "프리티데이터선택10G / 37,400원", "base": 58300, "disc": 20900, "pay": 37400}, {"code": "KT06", "name": "데이터안심300분15G(CU멤버십)+3M / 41,800원", "base": 58300, "disc": 16500, "pay": 41800}, {"code": "KT07", "name": "USIM데이터11G(CU멤버십)+ / 45,540원", "base": 65890, "disc": 20350, "pay": 45540}, {"code": "KT08", "name": "데이터안심15G(CU멤버십)+ / 35,970원", "base": 56100, "disc": 20130, "pay": 35970}, {"code": "KT09", "name": "데이터100G(CU멤버십)+ / 48,400원", "base": 55000, "disc": 6600, "pay": 48400}, {"code": "KT10", "name": "데이터팡팡 / 42,240원", "base": 53020, "disc": 10780, "pay": 42240}, {"code": "KT11", "name": "(5G)더빠른10G+1M / 42,900원", "base": 55000, "disc": 12100, "pay": 42900}, {"code": "KT12", "name": "(5G)더빠른110G+ / 50,600원", "base": 66000, "disc": 15400, "pay": 50600}, {"code": "KT13", "name": "(5G)더빠른200G+ / 59,400원", "base": 77000, "disc": 17600, "pay": 59400}]
+};
+
+function fmt(n){ 
+  try{ return Number(n).toLocaleString("ko-KR"); }catch(e){ return n; }
+}
+function getGroup(){ return document.querySelector('input[name="freet_group"]:checked')?.value || "sk"; }
+function setCarrierByGroup(g){ document.getElementById("carrier").value = (g==="sk") ? "SKT" : "KT"; }
+
+function populatePlans() {
+  const g = getGroup();
+  setCarrierByGroup(g);
+  const sel = document.getElementById("plan_select");
+  const plans = PLANS[g] || [];
+  sel.innerHTML = "";
+  plans.forEach((p, idx)=>{
+    const opt = document.createElement("option");
+    opt.value = p.code;
+    opt.textContent = p.name;
+    sel.appendChild(opt);
+  });
+  // choose first by default
+  if(plans.length) {
+    sel.value = plans[0].code;
+    applyPlan();
+  } else {
+    document.getElementById("plan_code").value = "";
+    document.getElementById("plan_name").value = "";
+    document.getElementById("base_monthly_fee").value = "";
+    document.getElementById("plan_disc").value = "";
+    document.getElementById("final_monthly_fee").value = "";
+  }
+}
+
+function applyPlan() {
+  const g = getGroup();
+  const code = document.getElementById("plan_select").value;
+  const p = (PLANS[g]||[]).find(x=>x.code===code);
+  if(!p) return;
+  document.getElementById("plan_code").value = p.code;
+  document.getElementById("plan_name").value = p.name;
+  document.getElementById("base_monthly_fee").value = fmt(p.base);
+  document.getElementById("plan_disc").value = fmt(p.disc);
+  document.getElementById("final_monthly_fee").value = fmt(p.pay);
+  document.getElementById("total_monthly_fee").value = fmt(p.pay); // 필요 시 2페이지 합계에 재사용
+}
+
+function syncJoinType() {
+  const jt = document.querySelector('input[name="join_type"]:checked')?.value || "new";
+  const portRow = document.getElementById("port_row");
+  const wishRow = document.getElementById("wish_row");
+
+  // 신규: 희망번호만 / 번호이동: 번호이동 영역만
+  portRow.style.display = (jt === "port") ? "" : "none";
+  wishRow.style.display = (jt === "new") ? "" : "none";
+
+  if (jt === "port") {
+    // clear new-only field
+    document.getElementById("wish4").value = "";
+  } else {
+    // clear port-only fields
+    document.getElementById("port_number").value = "";
+    document.getElementById("mvno_name").value = "";
+    document.getElementById("mvno_box").style.display = "none";
+    document.getElementById("prev_carrier").value = "skt";
+  }
+}
+
+function syncPrevCarrier() {
+  const v = document.getElementById("prev_carrier").value;
+  const box = document.getElementById("mvno_box");
+  box.style.display = (v==="mvno") ? "" : "none";
+  if(v!=="mvno") document.getElementById("mvno_name").value="";
+}
+
+function syncSim() {
+  const v = document.querySelector('input[name="sim_type"]:checked')?.value || "usim";
+  document.getElementById("usim_fields").style.display = (v==="usim") ? "" : "none";
+  document.getElementById("esim_fields").style.display = (v==="esim") ? "" : "none";
+  if(v==="usim") {
+    document.getElementById("imei1").value=""; document.getElementById("imei2").value=""; document.getElementById("eid").value="";
+  } else {
+    document.getElementById("sim_serial").value="";
+  }
+}
+
+function syncAutopay() {
+  const m = document.querySelector('input[name="autopay_method"]:checked')?.value || "bank";
+  const card = document.getElementById("card_fields");
+  card.style.display = (m==="card") ? "" : "none";
+  if(m!=="card") {
+    document.getElementById("card_exp_year").value=""; 
+    document.getElementById("card_exp_month").value="";
+    document.getElementById("autopay_exp").value="";
+  } else {
+    // update autopay_exp
+    const yy = (document.getElementById("card_exp_year").value||"").padStart(2,"0");
+    const mm = (document.getElementById("card_exp_month").value||"").padStart(2,"0");
+    if(yy && mm) document.getElementById("autopay_exp").value = yy + "/" + mm;
+  }
+}
+
+document.querySelectorAll('input[name="freet_group"]').forEach(el=>el.addEventListener("change", populatePlans));
+document.getElementById("plan_select").addEventListener("change", applyPlan);
+document.querySelectorAll('input[name="join_type"]').forEach(el=>el.addEventListener("change", syncJoinType));
+document.getElementById("prev_carrier").addEventListener("change", syncPrevCarrier);
+document.querySelectorAll('input[name="sim_type"]').forEach(el=>el.addEventListener("change", syncSim));
+document.querySelectorAll('input[name="autopay_method"]').forEach(el=>el.addEventListener("change", syncAutopay));
+document.getElementById("card_exp_year").addEventListener("input", syncAutopay);
+document.getElementById("card_exp_month").addEventListener("input", syncAutopay);
+
+document.getElementById("resetBtn").addEventListener("click", ()=>{
+  document.getElementById("f").reset();
+  populatePlans();
+  syncJoinType();
+  syncPrevCarrier();
+  syncSim();
+  syncAutopay();
+  const d = new Date();
+  document.getElementById("apply_date").value = d.toISOString().slice(0,10);
+});
+
+function comingSoon(){
+  alert("PDF 저장/인쇄는 매핑 스튜디오로 좌표를 찍고 generate.js를 붙인 다음 활성화됩니다.");
+}
+document.getElementById("saveBtn").addEventListener("click", comingSoon);
+document.getElementById("printBtn").addEventListener("click", comingSoon);
+
+// init
+(function init(){
+  // print date
+  const d = new Date();
+  document.getElementById("apply_date").value = d.toISOString().slice(0,10);
+  applyLang();
+  populatePlans();
+  syncJoinType();
+  syncPrevCarrier();
+  syncSim();
+  syncAutopay();
+})();
+</script>
+</body>
+</html>
