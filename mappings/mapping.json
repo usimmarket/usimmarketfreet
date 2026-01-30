@@ -1,12 +1,32 @@
 {
   "fields": {
     "subscriber_name_print_p1_1": {
-      "x": 157,
-      "y": 119,
+      "x": 172,
+      "y": 157,
       "size": 10,
       "page": 1,
       "source": [
         "subscriber_name_print"
+      ],
+      "type": "text"
+    },
+    " autopay_holder_print_p1_2": {
+      "x": 172,
+      "y": 241,
+      "size": 10,
+      "page": 1,
+      "source": [
+        " autopay_holder_print"
+      ],
+      "type": "text"
+    },
+    " apply_date_p1_3": {
+      "x": 203,
+      "y": 807,
+      "size": 10,
+      "page": 1,
+      "source": [
+        " apply_date"
       ],
       "type": "text"
     }
