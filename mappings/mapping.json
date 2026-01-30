@@ -1,22 +1,22 @@
 {
   "fields": {
-    "sim_serial_p1_1": {
-      "x": 268,
-      "y": 280,
+    "addr_p1_1": {
+      "x": 179,
+      "y": 200,
       "size": 10,
       "page": 1,
       "source": [
-        "sim_serial"
+        "addr"
       ],
       "type": "text"
     },
-    "birth_p1_2": {
-      "x": 286,
-      "y": 89,
+    "apply_date_p1_2": {
+      "x": 196,
+      "y": 805,
       "size": 10,
       "page": 1,
       "source": [
-        "birth"
+        "apply_date"
       ],
       "type": "text"
     }
