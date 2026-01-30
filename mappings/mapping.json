@@ -1,8 +1,18 @@
 {
-  "meta": {
-    "pdf": "template.pdf",
-    "coord_system": "pdf_points_origin_bottom_left",
-    "created": "2026-01-29 06:56:54"
+  "fields": {
+    "subscriber_name_print_p1_1": {
+      "x": 157,
+      "y": 119,
+      "size": 10,
+      "page": 1,
+      "source": [
+        "subscriber_name_print"
+      ],
+      "type": "text"
+    }
   },
-  "fields": {}
+  "vmap": {},
+  "fixed_flags": {
+    "intl_roaming_block": []
+  }
 }
