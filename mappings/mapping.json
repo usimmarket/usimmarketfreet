@@ -12,11 +12,21 @@
     },
     "apply_date_p1_2": {
       "x": 196,
-      "y": 205,
+      "y": 805,
       "size": 10,
       "page": 1,
       "source": [
         "apply_date"
+      ],
+      "type": "text"
+    },
+    "birth_p1_3": {
+      "x": 399,
+      "y": 156,
+      "size": 10,
+      "page": 1,
+      "source": [
+        "birth"
       ],
       "type": "text"
     }
