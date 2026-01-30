@@ -1,38 +1,39 @@
 {
+  "meta": {
+    "version": "3.5",
+    "unit": "pt",
+    "origin": "bottom-left"
+  },
   "fields": {
-    "addr_p1_1": {
-      "x": 179,
-      "y": 200,
+    "addr": {
+      "x": 116,
+      "y": 510,
       "size": 10,
       "page": 1,
+      "type": "text",
       "source": [
         "addr"
-      ],
-      "type": "text"
+      ]
     },
-    "apply_date_p1_2": {
-      "x": 196,
-      "y": 805,
+    "apply_date": {
+      "x": 133,
+      "y": 57,
       "size": 10,
       "page": 1,
+      "type": "text",
       "source": [
         "apply_date"
-      ],
-      "type": "text"
+      ]
     },
-    "birth_p1_3": {
-      "x": 399,
-      "y": 156,
+    "autopay_birth": {
+      "x": 284,
+      "y": 478,
       "size": 10,
       "page": 1,
+      "type": "text",
       "source": [
-        "birth"
-      ],
-      "type": "text"
+        "autopay_birth"
+      ]
     }
-  },
-  "vmap": {},
-  "fixed_flags": {
-    "intl_roaming_block": []
   }
 }
