@@ -1,32 +1,22 @@
 {
   "fields": {
-    "subscriber_name_print_p1_1": {
-      "x": 172,
-      "y": 157,
+    "sim_serial_p1_1": {
+      "x": 268,
+      "y": 280,
       "size": 10,
       "page": 1,
       "source": [
-        "subscriber_name_print"
+        "sim_serial"
       ],
       "type": "text"
     },
-    " autopay_holder_print_p1_2": {
-      "x": 172,
-      "y": 241,
+    "birth_p1_2": {
+      "x": 286,
+      "y": 89,
       "size": 10,
       "page": 1,
       "source": [
-        " autopay_holder_print"
-      ],
-      "type": "text"
-    },
-    " apply_date_p1_3": {
-      "x": 203,
-      "y": 807,
-      "size": 10,
-      "page": 1,
-      "source": [
-        " apply_date"
+        "birth"
       ],
       "type": "text"
     }
