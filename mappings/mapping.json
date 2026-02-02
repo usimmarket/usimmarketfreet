@@ -10,19 +10,31 @@
       "y": 602,
       "size": 10,
       "page": 1,
-      "type": "text",
+      "type": "checkbox",
       "source": [
         "freet_group"
-      ]
+      ],
+      "on_value": "sk"
     },
     "freet_group_kt": {
       "x": 82,
       "y": 602,
       "size": 10,
       "page": 1,
-      "type": "text",
+      "type": "checkbox",
       "source": [
         "freet_group"
+      ],
+      "on_value": "kt"
+    },
+    "addr": {
+      "x": 115,
+      "y": 509,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "addr"
       ]
     }
   }
