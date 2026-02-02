@@ -5,22 +5,15 @@
     "origin": "bottom-left"
   },
   "fields": {
-    "freet_group__sk": {
-      "x": 49,
-      "y": 602,
-      "size": 10,
-      "page": 1,
-      "type": "checkbox",
-      "source": [],
-      "on_value": ""
-    },
-    "freet_group__kt": {
+    "freet_group": {
       "x": 82,
       "y": 602,
       "size": 10,
       "page": 1,
       "type": "checkbox",
-      "source": [],
+      "source": [
+        "freet_group__kt"
+      ],
       "on_value": ""
     },
     "join_type__new": {
