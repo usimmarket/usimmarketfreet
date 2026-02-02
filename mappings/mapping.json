@@ -5,35 +5,140 @@
     "origin": "bottom-left"
   },
   "fields": {
-    "addr": {
-      "x": 116,
-      "y": 510,
+    "freet_group__sk": {
+      "x": 49,
+      "y": 602,
       "size": 10,
       "page": 1,
-      "type": "text",
-      "source": [
-        "addr"
-      ]
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
     },
-    "apply_date": {
-      "x": 133,
-      "y": 57,
+    "freet_group__kt": {
+      "x": 82,
+      "y": 602,
       "size": 10,
       "page": 1,
-      "type": "text",
-      "source": [
-        "apply_date"
-      ]
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
     },
-    "autopay_birth": {
-      "x": 284,
-      "y": 478,
+    "join_type__new": {
+      "x": 50,
+      "y": 575,
       "size": 10,
       "page": 1,
-      "type": "text",
-      "source": [
-        "autopay_birth"
-      ]
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "join_type__port": {
+      "x": 88,
+      "y": 575,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "customer_type__foreigner": {
+      "x": 88,
+      "y": 559,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "customer_type__native": {
+      "x": 49,
+      "y": 559,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "sim_type__esim": {
+      "x": 321,
+      "y": 351,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "autopay_method__bank": {
+      "x": 115,
+      "y": 494,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "autopay_method__card": {
+      "x": 142,
+      "y": 494,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "mnp_pay_type__postpaid": {
+      "x": 132,
+      "y": 410,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "mnp_pay_type__prepaid": {
+      "x": 115,
+      "y": 410,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "prev_carrier__skt": {
+      "x": 303,
+      "y": 408,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "prev_carrier__kt": {
+      "x": 320,
+      "y": 408,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "prev_carrier__lgu": {
+      "x": 335,
+      "y": 408,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
+    },
+    "prev_carrier__mvno": {
+      "x": 354,
+      "y": 408,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [],
+      "on_value": ""
     }
   }
 }
