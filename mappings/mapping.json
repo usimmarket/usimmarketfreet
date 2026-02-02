@@ -5,8 +5,8 @@
     "origin": "bottom-left"
   },
   "fields": {
-    "freet_group_sk": {
-      "x": 49,
+    "freet_group_kt": {
+      "x": 97,
       "y": 602,
       "size": 10,
       "page": 1,
@@ -15,8 +15,8 @@
         "freet_group"
       ]
     },
-    "freet_group_kt": {
-      "x": 82,
+    "freet_group_sk": {
+      "x": 52,
       "y": 602,
       "size": 10,
       "page": 1,
