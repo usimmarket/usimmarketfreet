@@ -5,36 +5,14 @@
     "origin": "bottom-left"
   },
   "fields": {
-    "freet_group_sk": {
-      "x": 50,
-      "y": 602,
-      "size": 10,
-      "page": 1,
-      "type": "checkbox",
-      "source": [
-        "freet_group"
-      ],
-      "on_value": "sk"
-    },
-    "freet_group_kt": {
-      "x": 82,
-      "y": 602,
-      "size": 10,
-      "page": 1,
-      "type": "checkbox",
-      "source": [
-        "freet_group"
-      ],
-      "on_value": "kt"
-    },
-    "addr": {
+    "subscriber_name": {
       "x": 115,
-      "y": 509,
+      "y": 542,
       "size": 10,
       "page": 1,
       "type": "text",
       "source": [
-        "addr"
+        "subscriber_name"
       ]
     }
   }
