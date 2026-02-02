@@ -5,27 +5,25 @@
     "origin": "bottom-left"
   },
   "fields": {
-    "freet_group_kt": {
-      "x": 97,
-      "y": 602,
-      "size": 10,
-      "page": 1,
-      "type": "checkbox",
-      "source": [
-        "freet_group"
-      ],
-      "on_value": "kt"
-    },
     "freet_group_sk": {
-      "x": 52,
+      "x": 50,
       "y": 602,
       "size": 10,
       "page": 1,
-      "type": "checkbox",
+      "type": "text",
       "source": [
         "freet_group"
-      ],
-      "on_value": "sk"
+      ]
+    },
+    "freet_group_kt": {
+      "x": 82,
+      "y": 602,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "freet_group"
+      ]
     }
   }
 }
