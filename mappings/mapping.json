@@ -10,20 +10,22 @@
       "y": 602,
       "size": 10,
       "page": 1,
-      "type": "text",
+      "type": "checkbox",
       "source": [
         "freet_group"
-      ]
+      ],
+      "on_value": "kt"
     },
     "freet_group_sk": {
       "x": 52,
       "y": 602,
       "size": 10,
       "page": 1,
-      "type": "text",
+      "type": "checkbox",
       "source": [
         "freet_group"
-      ]
+      ],
+      "on_value": "sk"
     }
   }
 }
