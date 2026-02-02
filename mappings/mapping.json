@@ -25,6 +25,17 @@
       "source": [
         "subscriber_name"
       ]
+    },
+    "freet_group_kt": {
+      "x": 83,
+      "y": 601,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "freet_group"
+      ],
+      "on_value": "V"
     }
   }
 }
