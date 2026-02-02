@@ -48,6 +48,16 @@
         "join_type"
       ],
       "on_value": "new"
+    },
+    "addr": {
+      "x": 151,
+      "y": 508,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "addr"
+      ]
     }
   }
 }
