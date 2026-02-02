@@ -5,9 +5,31 @@
     "origin": "bottom-left"
   },
   "fields": {
-    "freet_group_sk": {
-      "x": 50,
-      "y": 602,
+    "autopay_method__bank": {
+      "x": 115,
+      "y": 494,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "autopay_method"
+      ],
+      "on_value": "bank"
+    },
+    "customer_type__foreigner": {
+      "x": 88,
+      "y": 558,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "customer_type"
+      ],
+      "on_value": "foreigner"
+    },
+    "freet_group__sk": {
+      "x": 49,
+      "y": 603,
       "size": 10,
       "page": 1,
       "type": "checkbox",
@@ -16,26 +38,16 @@
       ],
       "on_value": "sk"
     },
-    "subscriber_name": {
-      "x": 143,
-      "y": 542,
-      "size": 10,
-      "page": 1,
-      "type": "text",
-      "source": [
-        "subscriber_name"
-      ]
-    },
-    "freet_group_kt": {
-      "x": 83,
-      "y": 601,
+    "join_type__new": {
+      "x": 49,
+      "y": 575,
       "size": 10,
       "page": 1,
       "type": "checkbox",
       "source": [
-        "freet_group"
+        "join_type"
       ],
-      "on_value": "V"
+      "on_value": "new"
     }
   }
 }
