@@ -5,8 +5,19 @@
     "origin": "bottom-left"
   },
   "fields": {
+    "freet_group_sk": {
+      "x": 50,
+      "y": 602,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "freet_group"
+      ],
+      "on_value": "sk"
+    },
     "subscriber_name": {
-      "x": 115,
+      "x": 143,
       "y": 542,
       "size": 10,
       "page": 1,
