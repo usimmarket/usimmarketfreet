@@ -5,6 +5,17 @@
     "origin": "bottom-left"
   },
   "fields": {
+    "freet_group__kt": {
+      "x": 105,
+      "y": 801,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "freet_group"
+      ],
+      "on_value": "kt"
+    },
     "freet_group__sk": {
       "x": 62,
       "y": 801,
@@ -16,16 +27,16 @@
       ],
       "on_value": "sk"
     },
-    "freet_group__kt": {
-      "x": 105,
-      "y": 801,
+    "join_type__new": {
+      "x": 53,
+      "y": 618,
       "size": 11,
       "page": 1,
       "type": "checkbox",
       "source": [
-        "freet_group"
+        "join_type"
       ],
-      "on_value": "kt"
+      "on_value": "new"
     }
   }
 }
