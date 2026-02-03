@@ -15,6 +15,17 @@
         "freet_group"
       ],
       "on_value": "sk"
+    },
+    "freet_group__kt": {
+      "x": 50,
+      "y": 765,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "freet_group"
+      ],
+      "on_value": "kt"
     }
   }
 }
