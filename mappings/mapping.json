@@ -6,9 +6,9 @@
   },
   "fields": {
     "freet_group__sk": {
-      "x": 61,
-      "y": 765,
-      "size": 11,
+      "x": 65,
+      "y": 790,
+      "size": 10,
       "page": 1,
       "type": "checkbox",
       "source": [
