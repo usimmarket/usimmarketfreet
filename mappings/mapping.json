@@ -28,8 +28,8 @@
       "on_value": "sk"
     },
     "join_type__new": {
-      "x": 57,
-      "y": 761,
+      "x": 59,
+      "y": 763,
       "size": 11,
       "page": 1,
       "type": "checkbox",
