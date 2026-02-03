@@ -6,8 +6,8 @@
   },
   "fields": {
     "freet_group__sk": {
-      "x": 50,
-      "y": 724,
+      "x": 65,
+      "y": 768,
       "size": 10,
       "page": 1,
       "type": "checkbox",
