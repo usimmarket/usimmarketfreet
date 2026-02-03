@@ -79,16 +79,6 @@
         "autopay_birth"
       ]
     },
-    "autopay_holder_print": {
-      "x": 169,
-      "y": 621,
-      "size": 10,
-      "page": 1,
-      "type": "text",
-      "source": [
-        "autopay_holder_print"
-      ]
-    },
     "autopay_number": {
       "x": 176,
       "y": 589,
@@ -199,16 +189,6 @@
         "plan_disc"
       ]
     },
-    "plan_name": {
-      "x": 138,
-      "y": 494,
-      "size": 12,
-      "page": 1,
-      "type": "text",
-      "source": [
-        "plan_name"
-      ]
-    },
     "port_number": {
       "x": 165,
       "y": 277,
@@ -240,13 +220,23 @@
       ]
     },
     "subscriber_name_print": {
-      "x": 327,
-      "y": 269,
+      "x": 335,
+      "y": 250,
       "size": 10,
-      "page": 2,
+      "page": 1,
       "type": "text",
       "source": [
         "subscriber_name_print"
+      ]
+    },
+    "plan_name": {
+      "x": 138,
+      "y": 494,
+      "size": 12,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "plan_name"
       ]
     },
     "wish4": {
@@ -345,6 +335,100 @@
       "source": [
         "eid"
       ]
+    },
+    "autopay_holder": {
+      "x": 137,
+      "y": 627,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "autopay_holder"
+      ]
+    },
+    "subscriber_name1": {
+      "x": 285,
+      "y": 470,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "subscriber_name"
+      ]
+    },
+    "subscriber_name2": {
+      "x": 281,
+      "y": 394,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "subscriber_name"
+      ]
+    },
+    "subscriber_name3": {
+      "x": 315,
+      "y": 360,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "subscriber_name"
+      ]
+    },
+    "plan_name2": {
+      "x": 80,
+      "y": 577,
+      "size": 10,
+      "page": 2,
+      "type": "text",
+      "source": [
+        "plan_name"
+      ]
+    },
+    "prev_carrier_skt": {
+      "x": 303,
+      "y": 420,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "skt"
+    },
+    "prev_carrier_kt": {
+      "x": 333,
+      "y": 421,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "kt"
+    },
+    "prev_carrier_lgu": {
+      "x": 366,
+      "y": 419,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "lgu"
+    },
+    "prev_carrier_mvno": {
+      "x": 395,
+      "y": 417,
+      "size": 10,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "mvno"
     }
   }
 }
