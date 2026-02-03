@@ -37,6 +37,17 @@
         "join_type"
       ],
       "on_value": "new"
+    },
+    "join_type__port": {
+      "x": 108,
+      "y": 763,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "join_type"
+      ],
+      "on_value": "port"
     }
   }
 }
