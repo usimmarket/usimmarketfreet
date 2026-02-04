@@ -92,6 +92,17 @@
         "autopay_method"
       ],
       "on_value": "bank"
+    },
+    "autopay_method__card": {
+      "x": 163,
+      "y": 656,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "autopay_method"
+      ],
+      "on_value": "card"
     }
   }
 }
