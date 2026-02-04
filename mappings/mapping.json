@@ -51,7 +51,7 @@
     },
     "customer_type__foreigner": {
       "x": 113,
-      "y": 740,
+      "y": 741,
       "size": 11,
       "page": 1,
       "type": "checkbox",
