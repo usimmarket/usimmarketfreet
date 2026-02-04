@@ -241,13 +241,23 @@
       ]
     },
     "card_exp_month": {
-      "x": 399,
+      "x": 424,
       "y": 593,
       "size": 10,
       "page": 1,
       "type": "text",
       "source": [
         "card_exp_month"
+      ]
+    },
+    "card_exp_year": {
+      "x": 399,
+      "y": 593,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "card_exp_year"
       ]
     }
   }
