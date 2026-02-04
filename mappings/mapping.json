@@ -259,6 +259,16 @@
       "source": [
         "card_exp_year"
       ]
+    },
+    "subscriber_name_print_1": {
+      "x": 276,
+      "y": 566,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "subscriber_name_print"
+      ]
     }
   }
 }
