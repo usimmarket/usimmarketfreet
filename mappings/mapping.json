@@ -209,6 +209,16 @@
       "source": [
         "autopay_holder_print"
       ]
+    },
+    "autopay_birth": {
+      "x": 378,
+      "y": 600,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "autopay_birth"
+      ]
     }
   }
 }
