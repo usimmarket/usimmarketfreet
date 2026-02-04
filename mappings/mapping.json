@@ -212,7 +212,7 @@
     },
     "autopay_birth": {
       "x": 378,
-      "y": 600,
+      "y": 636,
       "size": 10,
       "page": 1,
       "type": "text",
