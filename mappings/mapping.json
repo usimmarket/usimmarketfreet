@@ -72,8 +72,8 @@
       "on_value": "native"
     },
     "sim_type__esim": {
-      "x": 357,
-      "y": 400,
+      "x": 402,
+      "y": 456,
       "size": 11,
       "page": 1,
       "type": "checkbox",
