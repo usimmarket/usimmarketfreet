@@ -59,6 +59,17 @@
         "customer_type"
       ],
       "on_value": "foreigner"
+    },
+    "customer_type__native": {
+      "x": 61,
+      "y": 741,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "customer_type"
+      ],
+      "on_value": "native"
     }
   }
 }
