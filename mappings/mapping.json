@@ -94,7 +94,7 @@
       "on_value": "bank"
     },
     "autopay_method__card": {
-      "x": 183,
+      "x": 185,
       "y": 656,
       "size": 11,
       "page": 1,
