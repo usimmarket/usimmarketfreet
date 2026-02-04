@@ -106,7 +106,7 @@
     },
     "mnp_pay_type__postpaid": {
       "x": 171,
-      "y": 541,
+      "y": 543,
       "size": 11,
       "page": 1,
       "type": "checkbox",
