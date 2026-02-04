@@ -222,7 +222,7 @@
     },
     "autopay_org": {
       "x": 149,
-      "y": 624,
+      "y": 611,
       "size": 10,
       "page": 1,
       "type": "text",
