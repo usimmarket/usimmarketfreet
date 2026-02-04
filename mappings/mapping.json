@@ -125,6 +125,17 @@
         "mnp_pay_type"
       ],
       "on_value": "prepaid"
+    },
+    "prev_carrier_sk": {
+      "x": 345,
+      "y": 519,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "sk"
     }
   }
 }
