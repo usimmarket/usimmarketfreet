@@ -103,6 +103,17 @@
         "autopay_method"
       ],
       "on_value": "card"
+    },
+    "mnp_pay_type__postpaid": {
+      "x": 131,
+      "y": 410,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "mnp_pay_type"
+      ],
+      "on_value": "postpaid"
     }
   }
 }
