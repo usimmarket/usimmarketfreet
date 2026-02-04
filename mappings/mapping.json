@@ -136,6 +136,17 @@
         "prev_carrier"
       ],
       "on_value": "skt"
+    },
+    "prev_carrier_kt": {
+      "x": 411,
+      "y": 543,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "kt"
     }
   }
 }
