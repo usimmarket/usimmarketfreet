@@ -179,6 +179,16 @@
       "source": [
         "subscriber_name_print"
       ]
+    },
+    "birth": {
+      "x": 399,
+      "y": 725,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "birth"
+      ]
     }
   }
 }
