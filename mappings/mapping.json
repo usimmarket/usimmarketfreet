@@ -169,6 +169,16 @@
         "prev_carrier"
       ],
       "on_value": "mvno"
+    },
+    "subscriber_name_print": {
+      "x": 149,
+      "y": 678,
+      "size": 11,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "subscriber_name_print"
+      ]
     }
   }
 }
