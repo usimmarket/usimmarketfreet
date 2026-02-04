@@ -170,6 +170,16 @@
       ],
       "on_value": "mvno"
     },
+    "birth": {
+      "x": 378,
+      "y": 720,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "birth"
+      ]
+    },
     "subscriber_name_print": {
       "x": 149,
       "y": 720,
@@ -180,14 +190,14 @@
         "subscriber_name_print"
       ]
     },
-    "birth": {
-      "x": 378,
-      "y": 720,
-      "size": 11,
+    "addr": {
+      "x": 149,
+      "y": 700,
+      "size": 10,
       "page": 1,
       "type": "text",
       "source": [
-        "birth"
+        "addr"
       ]
     }
   }
