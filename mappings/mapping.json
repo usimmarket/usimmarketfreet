@@ -48,6 +48,17 @@
         "join_type"
       ],
       "on_value": "port"
+    },
+    "customer_type__foreigner": {
+      "x": 113,
+      "y": 558,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "customer_type"
+      ],
+      "on_value": "foreigner"
     }
   }
 }
