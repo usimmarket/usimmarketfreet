@@ -232,7 +232,7 @@
     },
     "autopay_number": {
       "x": 149,
-      "y": 598,
+      "y": 595,
       "size": 10,
       "page": 1,
       "type": "text",
