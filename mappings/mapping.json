@@ -83,8 +83,8 @@
       "on_value": "esim"
     },
     "autopay_method__bank": {
-      "x": 192,
-      "y": 623,
+      "x": 160,
+      "y": 646,
       "size": 11,
       "page": 1,
       "type": "checkbox",
