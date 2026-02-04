@@ -83,7 +83,7 @@
       "on_value": "esim"
     },
     "autopay_method__bank": {
-      "x": 152,
+      "x": 140,
       "y": 656,
       "size": 11,
       "page": 1,
