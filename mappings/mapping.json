@@ -105,8 +105,8 @@
       "on_value": "card"
     },
     "mnp_pay_type__postpaid": {
-      "x": 131,
-      "y": 410,
+      "x": 163,
+      "y": 514,
       "size": 11,
       "page": 1,
       "type": "checkbox",
