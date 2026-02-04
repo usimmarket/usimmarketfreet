@@ -172,7 +172,7 @@
     },
     "subscriber_name_print": {
       "x": 149,
-      "y": 725,
+      "y": 720,
       "size": 10,
       "page": 1,
       "type": "text",
@@ -181,7 +181,7 @@
       ]
     },
     "birth": {
-      "x": 390,
+      "x": 378,
       "y": 720,
       "size": 11,
       "page": 1,
