@@ -114,6 +114,17 @@
         "mnp_pay_type"
       ],
       "on_value": "postpaid"
+    },
+    "mnp_pay_type__prepaid": {
+      "x": 129,
+      "y": 543,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "mnp_pay_type"
+      ],
+      "on_value": "prepaid"
     }
   }
 }
