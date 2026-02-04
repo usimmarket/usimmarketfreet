@@ -158,6 +158,17 @@
         "prev_carrier"
       ],
       "on_value": "lgu"
+    },
+    "prev_carrier_mvno": {
+      "x": 460,
+      "y": 543,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "mvno"
     }
   }
 }
