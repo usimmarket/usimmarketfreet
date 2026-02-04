@@ -239,6 +239,16 @@
       "source": [
         "autopay_number"
       ]
+    },
+    "card_exp_month": {
+      "x": 399,
+      "y": 593,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "card_exp_month"
+      ]
     }
   }
 }
