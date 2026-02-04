@@ -70,6 +70,17 @@
         "customer_type"
       ],
       "on_value": "native"
+    },
+    "sim_type__esim": {
+      "x": 322,
+      "y": 351,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "sim_type"
+      ],
+      "on_value": "esim"
     }
   }
 }
