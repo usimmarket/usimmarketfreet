@@ -127,8 +127,8 @@
       "on_value": "prepaid"
     },
     "prev_carrier_skt": {
-      "x": 383,
-      "y": 518,
+      "x": 393,
+      "y": 546,
       "size": 11,
       "page": 1,
       "type": "checkbox",
