@@ -147,6 +147,17 @@
         "prev_carrier"
       ],
       "on_value": "kt"
+    },
+    "prev_carrier_lgu": {
+      "x": 445,
+      "y": 543,
+      "size": 11,
+      "page": 1,
+      "type": "checkbox",
+      "source": [
+        "prev_carrier"
+      ],
+      "on_value": "lgu"
     }
   }
 }
