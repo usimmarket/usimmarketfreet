@@ -172,8 +172,8 @@
     },
     "subscriber_name_print": {
       "x": 149,
-      "y": 678,
-      "size": 11,
+      "y": 720,
+      "size": 10,
       "page": 1,
       "type": "text",
       "source": [
