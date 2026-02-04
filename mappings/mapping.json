@@ -199,6 +199,16 @@
       "source": [
         "addr"
       ]
+    },
+    "autopay_holder_print": {
+      "x": 149,
+      "y": 634,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "autopay_holder_print"
+      ]
     }
   }
 }
