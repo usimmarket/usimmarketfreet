@@ -127,15 +127,14 @@
       "on_value": "prepaid"
     },
     "prev_carrier_sk": {
-      "x": 345,
-      "y": 519,
+      "x": 303,
+      "y": 409,
       "size": 11,
       "page": 1,
-      "type": "checkbox",
+      "type": "text",
       "source": [
         "prev_carrier"
-      ],
-      "on_value": "sk"
+      ]
     }
   }
 }
