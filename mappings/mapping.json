@@ -311,9 +311,9 @@
       ]
     },
     "mvno_name": {
-      "x": 490,
-      "y": 543,
-      "size": 13,
+      "x": 493,
+      "y": 542,
+      "size": 10,
       "page": 1,
       "type": "text",
       "source": [
