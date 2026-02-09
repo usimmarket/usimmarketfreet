@@ -321,13 +321,43 @@
       ]
     },
     "sim_serial": {
-      "x": 336,
+      "x": 338,
       "y": 466,
       "size": 8,
       "page": 1,
       "type": "text",
       "source": [
         "sim_serial"
+      ]
+    },
+    "imei1": {
+      "x": 160,
+      "y": 403,
+      "size": 8,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "imei1"
+      ]
+    },
+    "imei2": {
+      "x": 318,
+      "y": 409,
+      "size": 8,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "imei2"
+      ]
+    },
+    "eid": {
+      "x": 155,
+      "y": 386,
+      "size": 8,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "eid"
       ]
     }
   }
