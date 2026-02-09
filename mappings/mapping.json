@@ -389,6 +389,16 @@
       "source": [
         "subscriber_name_print"
       ]
+    },
+    "port_number_1": {
+      "x": 145,
+      "y": 179,
+      "size": 10,
+      "page": 2,
+      "type": "text",
+      "source": [
+        "port_number"
+      ]
     }
   }
 }
