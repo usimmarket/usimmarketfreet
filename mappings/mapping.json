@@ -271,10 +271,20 @@
       ]
     },
     "apply_date": {
-      "x": 192,
-      "y": 70,
+      "x": 197,
+      "y": 71,
       "size": 12,
       "page": 1,
+      "type": "text",
+      "source": [
+        "apply_date"
+      ]
+    },
+    "apply_date_1": {
+      "x": 134,
+      "y": 141,
+      "size": 12,
+      "page": 2,
       "type": "text",
       "source": [
         "apply_date"
