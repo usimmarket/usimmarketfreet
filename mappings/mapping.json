@@ -313,11 +313,21 @@
     "mvno_name": {
       "x": 496,
       "y": 542,
-      "size": 10,
+      "size": 9,
       "page": 1,
       "type": "text",
       "source": [
         "mvno_name"
+      ]
+    },
+    "sim_serial": {
+      "x": 370,
+      "y": 466,
+      "size": 9,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "sim_serial"
       ]
     }
   }
