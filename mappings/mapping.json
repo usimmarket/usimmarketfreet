@@ -359,6 +359,16 @@
       "source": [
         "eid"
       ]
+    },
+    "subscriber_name_print_2": {
+      "x": 330,
+      "y": 144,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "subscriber_name_print"
+      ]
     }
   }
 }
