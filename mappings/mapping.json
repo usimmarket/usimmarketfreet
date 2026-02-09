@@ -333,7 +333,7 @@
     "imei1": {
       "x": 151,
       "y": 401,
-      "size": 10,
+      "size": 12,
       "page": 1,
       "type": "text",
       "source": [
@@ -343,7 +343,7 @@
     "imei2": {
       "x": 399,
       "y": 401,
-      "size": 10,
+      "size": 12,
       "page": 1,
       "type": "text",
       "source": [
@@ -351,9 +351,9 @@
       ]
     },
     "eid": {
-      "x": 155,
-      "y": 386,
-      "size": 8,
+      "x": 151,
+      "y": 382,
+      "size": 12,
       "page": 1,
       "type": "text",
       "source": [
