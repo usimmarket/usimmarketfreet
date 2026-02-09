@@ -303,11 +303,21 @@
     "port_number": {
       "x": 212,
       "y": 543,
-      "size": 12,
+      "size": 13,
       "page": 1,
       "type": "text",
       "source": [
         "port_number"
+      ]
+    },
+    "mvno_name": {
+      "x": 490,
+      "y": 543,
+      "size": 13,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "mvno_name"
       ]
     }
   }
