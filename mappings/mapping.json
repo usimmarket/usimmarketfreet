@@ -431,9 +431,9 @@
       ]
     },
     "base_monthly_fee": {
-      "x": 189,
+      "x": 191,
       "y": 570,
-      "size": 12,
+      "size": 10,
       "page": 2,
       "type": "text",
       "source": [
