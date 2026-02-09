@@ -399,6 +399,16 @@
       "source": [
         "port_number"
       ]
+    },
+    "seller_name": {
+      "x": 126,
+      "y": 200,
+      "size": 12,
+      "page": 2,
+      "type": "text",
+      "source": [
+        "seller_name"
+      ]
     }
   }
 }
