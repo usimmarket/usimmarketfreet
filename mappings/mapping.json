@@ -411,9 +411,9 @@
       ]
     },
     "plan_name": {
-      "x": 105,
-      "y": 466,
-      "size": 12,
+      "x": 103,
+      "y": 464,
+      "size": 10,
       "page": 1,
       "type": "text",
       "source": [
