@@ -271,9 +271,9 @@
       ]
     },
     "apply_date": {
-      "x": 248,
-      "y": 167,
-      "size": 10,
+      "x": 171,
+      "y": 53,
+      "size": 11,
       "page": 1,
       "type": "text",
       "source": [
