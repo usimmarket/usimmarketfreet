@@ -269,6 +269,16 @@
       "source": [
         "subscriber_name_print"
       ]
+    },
+    "apply_date": {
+      "x": 248,
+      "y": 167,
+      "size": 10,
+      "page": 1,
+      "type": "text",
+      "source": [
+        "apply_date"
+      ]
     }
   }
 }
