@@ -203,7 +203,7 @@
     "autopay_holder_print": {
       "x": 148,
       "y": 640,
-      "size": 7,
+      "size": 6,
       "page": 1,
       "type": "text",
       "source": [
