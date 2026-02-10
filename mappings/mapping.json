@@ -203,7 +203,7 @@
     "autopay_holder_print": {
       "x": 148,
       "y": 640,
-      "size": 6,
+      "size": 7,
       "page": 1,
       "type": "text",
       "source": [
@@ -263,7 +263,7 @@
     "subscriber_name_print_1": {
       "x": 337,
       "y": 573,
-      "size": 10,
+      "size": 6,
       "page": 1,
       "type": "text",
       "source": [
@@ -363,7 +363,7 @@
     "subscriber_name_print_2": {
       "x": 367,
       "y": 146,
-      "size": 10,
+      "size": 6,
       "page": 1,
       "type": "text",
       "source": [
@@ -373,7 +373,7 @@
     "subscriber_name_print_3": {
       "x": 367,
       "y": 83,
-      "size": 10,
+      "size": 6,
       "page": 1,
       "type": "text",
       "source": [
