@@ -201,8 +201,8 @@
       ]
     },
     "autopay_holder_print": {
-      "x": 146,
-      "y": 641,
+      "x": 148,
+      "y": 640,
       "size": 8,
       "page": 1,
       "type": "text",
